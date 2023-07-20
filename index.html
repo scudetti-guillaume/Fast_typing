@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Tower</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://lesiteduscudo.com/fast_typing/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+        if (screen.width < 1100) {
+            alert('Disponible uniquement sur PC')
+            window.location = "https://lesiteduscudo.com";
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <div id="index-main">
+        <div class="title-game">
+            <h1 id="h1-index">Type Tower</h1>
+        </div>
+        <div class="bottom-part">
+            <div id="index-card">
+                <form type="submit" action="">
+                    <div id="index-form">
+                        <div id="pseudo-form">
+                            <p>Pseudo : </p>
+                            <input type="text" name="pseudo" id="pseudo-input">
+                        </div>
+                        <div id="password-form">
+                            <p>Mot de passe :</p>
+                            <input type="password" name="password" id='password-input'>
+                        </div>
+                    </div>
+                </form>
+                <button id="btn-login">Connexion</button>
+                <p>Pas encore de compte ?</p>
+                <a href="https://lesiteduscudo.com/fast_typing/register.html">Créer un compte</a>
+                <a href="https://lesiteduscudo.com/fast_typing/unloggedMenu.html">Jouer sans compte</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/config.js"></script>
+<script src="./js/pages/index.js"></script>
+
+
+<!-- main -->
+
+</html>

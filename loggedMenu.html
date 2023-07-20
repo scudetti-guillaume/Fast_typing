@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://lesiteduscudo.com/fast_typing/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <title>Type Tower</title>
+    <script>
+        if (screen.width < 1100) {
+            alert('Disponible uniquement sur PC')
+            window.location = "https://lesiteduscudo.com";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main-unlogged">
+        <div class="title-game">
+            <h1 id="h1-unlogged">Type Tower</h1>
+        </div>
+        <div id="flex-card-unlogged">
+            <div class="tabs">
+                <div class="tabs-btn-container">
+                    <button class="tab active-tab">
+                        Score
+                    </button>
+                    <button class="tab">
+                        Précision
+                    </button>
+                    <button class="tab">
+                        Vitesse
+                    </button>
+                </div>
+
+                <div id="best-score" class="tab-content active-tab-content">
+
+                </div>
+
+                <div id="best-round" class="tab-content">
+
+
+                </div>
+
+                <div id="best-speed" class="tab-content">
+                </div>
+
+            </div>
+
+            <div id="menu">
+                <h2>Menu</h2>
+                <button id="btn-play">Jouer</button>
+                <button id="btn-help">Aide</button>
+                <button id="btn-stats">Mes Stats</button>
+
+            </div>
+        </div>
+    </div>
+    <img class="back-icon" src="https://lesiteduscudo.com/fast_typing/assets/icons/back.png" alt="">
+
+</body>
+<script src="./js/config.js"></script>
+<script src="./js/pages/loggedMenu.js"></script>
+
+</html>
