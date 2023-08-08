@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-require("dotenv").config({ path: "./config/.envDev" });
+require("dotenv").config({ path: ".env" });
 mongoose
   .connect(
-    `mongodb+srv://${process.env.IDMDB}@cluster0.ix5aqxs.mongodb.net/`,
+    `${process.env.DB_USER_MONGO}://${process.env.DB_USER_PASS}@${process.env.DB_USER_CLUSTER}`,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))
